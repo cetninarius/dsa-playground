@@ -1,11 +1,17 @@
 from linked_list import MyLinkedList
 
 lista = MyLinkedList()
-lista.addAtHead(5)
-lista.addAtHead(10)
-lista.addAtTail(15)
-lista.addAtIndex(0, 2)
-print(lista.get(2))
-lista.deleteAtIndex(6)
+lista.addAtHead(1)
+lista.addAtTail(2)
+lista.addAtTail(3)
+lista.addAtTail(3)
+lista.addAtTail(2)
+lista.addAtTail(1)
+
+print(lista.isPalindrome())
+
 lista.printList()
+
+
+
 
