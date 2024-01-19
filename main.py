@@ -1,14 +1,19 @@
 from linked_list import MyLinkedList
+from doubly_linked_list import MyDoublyLinkedList
+from circular_queue import MyCircularQueue
 
-lista = MyLinkedList()
-lista.addAtHead(1)
-lista.addAtTail(2)
-lista.addAtTail(3)
-lista.addAtTail(3)
-lista.addAtTail(2)
-lista.addAtTail(1)
+lista = MyCircularQueue(3)
 
-print(lista.isPalindrome())
+lista.printList()
+print(lista.enQueue(1))
+print(lista.enQueue(2))
+print(lista.enQueue(3))
+print(lista.enQueue(4))
+print(lista.Rear())
+print(lista.isFull())
+print(lista.deQueue())
+print(lista.enQueue(4))
+print(lista.Rear())
 
 lista.printList()
 
